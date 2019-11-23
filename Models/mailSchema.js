@@ -3,7 +3,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const PreFormSchema = new Schema({
+const MailSchema = new Schema({
   date: { type: Date, required: true },
   email: { type: String, required: true },
 //   receivePromos: { type: Boolean, required: false },
@@ -12,7 +12,7 @@ const PreFormSchema = new Schema({
 });
 
 // Lets create (convert) this schema Model with ---> mongoose.model(modelName, schema):
-const PreForm = mongoose.model("PreForm", PreFormSchema);
+const Mail = mongoose.model("Mail", MailSchema);
 
 // Send it:
-module.exports = PreForm;
+module.exports = Mail;
