@@ -3,6 +3,9 @@ const express = require("express");
 const app = express();
 // import CORS
 const cors = require("cors");
+app.use(cors());// Use CORS
+
+
 // check computer environment port number
 const port = process.env.PORT || 3001;
 
@@ -24,8 +27,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // parse application/json
 app.use(bodyParser.json());
 
-// Use CORS
-app.use(cors());
 
 // Use router
 app.use('/api', routes)
