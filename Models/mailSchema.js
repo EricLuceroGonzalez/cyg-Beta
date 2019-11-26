@@ -4,8 +4,8 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const MailSchema = new Schema({
-  date: { type: Date, required: true },
-  email: { type: String, required: true },
+  date: { type: Date, required: false },
+  email: { type: String, required: false }
 //   receivePromos: { type: Boolean, required: false },
 //   thumb: { type: Boolean, required: false },
 //   contact: { type: String, required: false }
