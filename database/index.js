@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 
 // ... manage URL of mongo-atlas db (from cluster) *sended to env*
 // connect that mongoose with Mongo cluster
-db_uri = process.env.DB_URI;
+db_uri = process.env.MONGODB;
 
 // console.log(db_uri);
 
