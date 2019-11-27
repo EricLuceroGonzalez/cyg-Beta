@@ -16,7 +16,7 @@ mongoose.connect(
     if (!err) {
       console.log("MongoDB - Conexion exitosa :):");
     } else {
-      console.log(`Error en conexion: \n ${err}`);
+      console.log(`Error en la conexion: \n ${err}`);
     }
   }
 );
